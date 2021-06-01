@@ -130,5 +130,5 @@ flashing_window_title <- function(session = shiny::getDefaultReactiveDomain(),
 #'
 #' @export
 busy_window_title <- function(title = "Running...") {
-  span(class = "shiny-busy-title", `data-title` = title)
+  shiny::span(class = "shiny-busy-title", `data-title` = title)
 }
