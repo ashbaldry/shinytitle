@@ -1,15 +1,13 @@
 Package: shinytitle
 Type: Package
-Title: Window Title Edit for Shiny
+Title: Update Window Tab Title in 'shiny' Session
 Version: 0.1.0
 Authors@R: person("Ashley", "Baldry", email = "arbaldry91@gmail.com", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: GPL2
+Description: Enables the ability to change or flash the title of the brower tab window during a 'shiny' session.
 Imports: shiny
+Suggests: testthat (>= 3.0.0)
+License: GPL2
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
-Suggests: 
-    testthat (>= 3.0.0)
 Config/testthat/edition: 3
