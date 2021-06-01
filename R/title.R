@@ -105,3 +105,30 @@ flashing_window_title <- function(session = shiny::getDefaultReactiveDomain(),
 
   session$sendCustomMessage("flashWindowTitle", settings)
 }
+
+#' Create Busy Browser Title
+#'
+#' @param title String to give the window title.
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'
+#'   ui <- fluidPage(
+#'     title = "Initial Title",
+#'     use_shiny_title(),
+#'     busy_window_title("Sleeping..."),
+#'     actionButton("button", "Click me for a 5 second busy title")
+#'   )
+#'
+#'   server <- function(input, output, session) {
+#'     observeEvent(input$button, Sys.sleep(5))
+#'   }
+#'
+#'   shinyApp(ui, server)
+#' }
+#'
+#' @export
+busy_window_title <- function(title = "Running...") {
+  span(class = "shiny-busy-title", `data-title` = title)
+}
