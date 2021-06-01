@@ -40,7 +40,7 @@
 <li>
   <a href="index.html">
     <span class="fas fa-home fa-lg"></span>
-     
+
   </a>
 </li>
 <li>
@@ -51,7 +51,7 @@
 <li>
   <a href="https://github.com/ashbaldry/shinytitle/">
     <span class="fab fa-github fa-lg"></span>
-     
+
   </a>
 </li>
       </ul>
@@ -62,7 +62,7 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="contents col-md-9">
@@ -92,32 +92,32 @@
 <div id="examples" class="section level2">
 <h2 class="hasAnchor">
 <a href="#examples" class="anchor"></a>Examples</h2>
-<p><img src="inst/readme/shinytitle.gif" alt="Flashing Title Example"></p>
+<p><img src="img/shinytitle.gif" alt="Flashing Title Example"></p>
 <div id="written-example" class="section level3">
 <h3 class="hasAnchor">
 <a href="#written-example" class="anchor"></a>Written Example</h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://shiny.rstudio.com/">shiny</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ashbaldry/shinytitle">shinytitle</a></span><span class="op">)</span>
-  
+
 <span class="va">ui</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html">fluidPage</a></span><span class="op">(</span>
   title <span class="op">=</span> <span class="st">"Initial Title"</span>,
   <span class="fu"><a href="reference/use_shiny_title.html">use_shiny_title</a></span><span class="op">(</span><span class="op">)</span>,
   <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/actionButton.html">actionButton</a></span><span class="op">(</span><span class="st">"button"</span>, <span class="st">"Click me for a flashing title"</span><span class="op">)</span>,
   <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/actionButton.html">actionButton</a></span><span class="op">(</span><span class="st">"button2"</span>, <span class="st">"Click me for a new title after a 3 second wait"</span><span class="op">)</span>
 <span class="op">)</span>
-  
+
 <span class="va">server</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">input</span>, <span class="va">output</span>, <span class="va">session</span><span class="op">)</span> <span class="op">{</span>
   <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/observeEvent.html">observeEvent</a></span><span class="op">(</span><span class="va">input</span><span class="op">$</span><span class="va">button</span>, <span class="op">{</span>
     <span class="fu"><a href="reference/flashing_window_title.html">flashing_window_title</a></span><span class="op">(</span><span class="va">session</span>, <span class="st">"--- Flashing Title ---"</span>, duration <span class="op">=</span> <span class="fl">10000</span><span class="op">)</span>
   <span class="op">}</span><span class="op">)</span>
-    
+
   <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/observeEvent.html">observeEvent</a></span><span class="op">(</span><span class="va">input</span><span class="op">$</span><span class="va">button2</span>, <span class="op">{</span>
     <span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html">Sys.sleep</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span>
     <span class="fu"><a href="reference/change_window_title.html">change_window_title</a></span><span class="op">(</span><span class="va">session</span>, <span class="st">"Sleep Finished"</span>, inactive_only <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
   <span class="op">}</span><span class="op">)</span>
 <span class="op">}</span>
-  
+
 <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html">shinyApp</a></span><span class="op">(</span><span class="va">ui</span>, <span class="va">server</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
@@ -162,7 +162,7 @@
       </footer>
 </div>
 
-  
+
 
 
   </body>
