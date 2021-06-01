@@ -4,6 +4,8 @@ Title: Update Browser Window Title in 'shiny' Session
 Version: 0.1.0
 Authors@R: person("Ashley", "Baldry", email = "arbaldry91@gmail.com", role = c("aut", "cre"))
 Description: Enables the ability to change or flash the title of the brower window during a 'shiny' session.
+URL: https://github.com/ashbaldry/shinytitle
+BugReports: https://github.com/ashbaldry/shinytitle/issues
 Imports: shiny
 Suggests: testthat (>= 3.0.0)
 License: GPL-2
