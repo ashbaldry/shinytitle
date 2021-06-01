@@ -97,5 +97,3 @@ $(document).on('shiny:connected', function() {
     $(document).on('shiny:idle', window_title.setIdleTitle);
   }
 });
-
-
