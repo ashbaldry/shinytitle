@@ -12,7 +12,10 @@
 #' @param ... other arguments sent to \code{\link[shiny]{runApp}}
 #'
 #' @examples
-#' run_shinytitle_example()
+#' if (interactive()) {
+#'   library(shiny)
+#'   run_shinytitle_example()
+#' }
 #'
 #' @export
 run_shinytitle_example <- function(example = c("toggle", "busy"), ...) {

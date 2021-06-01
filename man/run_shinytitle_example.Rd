@@ -20,6 +20,9 @@ Launch one of the examples contained in the \code{shinytitle} package:
 }
 }
 \examples{
-run_shinytitle_example()
+if (interactive()) {
+  library(shiny)
+  run_shinytitle_example()
+}
 
 }
