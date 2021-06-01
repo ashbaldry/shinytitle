@@ -16,11 +16,9 @@ Currently there are three functions:
 - `flashing_window_title`: Make the window title flash between the current title and a temporary second title, and
 - `busy_window_title`: Adding the ability to change the browser title to a different string whenever the shiny app is busy
 
-Both functions have the ability to be changed only when the tab is not the active tab. `flashing_window_title` has some extra features, such as a maximum duration of the flashing and being able to stop when the mouse moves.
-
 ## Examples
 
-![Flashing Title Example](inst/readme/shinytitle.mp4)
+![Flashing Title Example](inst/readme/shinytitle.gif)
 
 ### Written Example
 
