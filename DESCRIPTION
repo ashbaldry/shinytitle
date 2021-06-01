@@ -1,9 +1,9 @@
 Package: shinytitle
 Type: Package
-Title: Update Window Tab Title in 'shiny' Session
+Title: Update Browser Window Title in 'shiny' Session
 Version: 0.1.0
 Authors@R: person("Ashley", "Baldry", email = "arbaldry91@gmail.com", role = c("aut", "cre"))
-Description: Enables the ability to change or flash the title of the brower tab window during a 'shiny' session.
+Description: Enables the ability to change or flash the title of the brower window during a 'shiny' session.
 Imports: shiny
 Suggests: testthat (>= 3.0.0)
 License: GPL2
