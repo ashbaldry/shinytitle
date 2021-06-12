@@ -1,5 +1,9 @@
 # `shinytitle` - Window Browser Title Change in Shiny
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ashbaldry/shinytitle/workflows/R-CMD-check/badge.svg)](https://github.com/ashbaldry/shinytitle/actions)
+<!-- badges: end -->
+  
 The goal of `shinytitle` is to update the browser window title when running a shiny application.
 
 ## Installation
