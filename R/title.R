@@ -53,7 +53,7 @@ change_window_title <- function(session = shiny::getDefaultReactiveDomain(),
 #' active. Default is set to \code{FALSE}.
 #' @param revert_on_focus Logical, should the title revert back to the original title when the tab is in
 #' focus/active again? Only works when \code{inactive_only = TRUE}.
-#' @param revert_on_mousemove Logical, should the title revert back to the original title when tthe mouse
+#' @param revert_on_mousemove Logical, should the title revert back to the original title when the mouse
 #' is moved in the tab? Default is set to \code{TRUE}.
 #' @param interval Time (in milliseconds) to flip between the original title and the new title.
 #' @param duration Time (in milliseconds) to stop flashing the title. 0 (the default) means it will

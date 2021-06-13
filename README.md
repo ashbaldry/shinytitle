@@ -12,7 +12,7 @@ The goal of `shinytitle` is to update the browser window title when running a sh
 devtools::install_github("ashbaldry/shinytitle")
 ```
 
-## Funcationality
+## Functionality
 
 Currently there are three functions:
 
