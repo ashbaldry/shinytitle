@@ -9,8 +9,14 @@ busy_window_title(title = "Running...")
 \arguments{
 \item{title}{String to give the window title.}
 }
+\value{
+The browser tab title will change whenever the shiny application is in a 'busy' state.
+}
 \description{
-Create Busy Browser Title
+Change the text in the browser tab whenever the shiny application is processing any server-side code.
+}
+\note{
+Add \code{use_shiny_title} within the UI for \code{busy_window_title} to work.
 }
 \examples{
 if (interactive()) {

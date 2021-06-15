@@ -23,8 +23,14 @@ active. Default is set to \code{FALSE}}
 \item{revert_on_focus}{Logical, should the title revert back to the original title when the tab is in
 focus/active again? Only works when \code{inactive_only = TRUE}.}
 }
+\value{
+The browser tab title will change to the new specified title.
+}
 \description{
-Change Browser Title
+Change the text that is present in the browser tab.
+}
+\note{
+Add \code{use_shiny_title} within the UI for \code{change_window_title} to work.
 }
 \examples{
 if (interactive()) {

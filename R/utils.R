@@ -1,7 +1,10 @@
 #' Enable \code{shinytitle}
 #'
 #' @description
-#' Adding script to enable the ability to change the window title.
+#' Add this function to the UI of a shiny application in order for you to be able to update the
+#' browser title.
+#'
+#' @return A script tag that enables \code{shinytitle} to work within a shiny app.
 #'
 #' @examples
 #' if (interactive()) {
@@ -26,5 +29,8 @@
 #'
 #' @export
 use_shiny_title <- function() {
+  file <- system.file("srcjs", package = "shinytitle", mustWork = TRUE)
+  shiny::addResourcePath("shinytitle", file)
+
   shiny::tags$head(shiny::tags$script(src = "shinytitle/title-change.js"))
 }

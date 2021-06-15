@@ -1,5 +1,8 @@
 #' Change Browser Title
 #'
+#' @description
+#' Change the text that is present in the browser tab.
+#'
 #' @param session The \code{session} object passed to function given to \code{shinyServer}.
 #' Default is \code{getDefaultReactiveDomain()}.
 #' @param title String to give the window title
@@ -7,6 +10,10 @@
 #' active. Default is set to \code{FALSE}
 #' @param revert_on_focus Logical, should the title revert back to the original title when the tab is in
 #' focus/active again? Only works when \code{inactive_only = TRUE}.
+#'
+#' @return The browser tab title will change to the new specified title.
+#'
+#' @note Add \code{use_shiny_title} within the UI for \code{change_window_title} to work.
 #'
 #' @examples
 #' if (interactive()) {
@@ -46,6 +53,9 @@ change_window_title <- function(session = shiny::getDefaultReactiveDomain(),
 
 #' Create Flashing Browser Title
 #'
+#' @description
+#' Alternate the text in the browser tab between the current text and the new specified text.
+#'
 #' @param session The \code{session} object passed to function given to \code{shinyServer}.
 #' Default is \code{getDefaultReactiveDomain()}.
 #' @param title String to give the window title.
@@ -58,6 +68,10 @@ change_window_title <- function(session = shiny::getDefaultReactiveDomain(),
 #' @param interval Time (in milliseconds) to flip between the original title and the new title.
 #' @param duration Time (in milliseconds) to stop flashing the title. 0 (the default) means it will
 #' flash indefinitely.
+#'
+#' @return The browser tab title will change between the original and newly specified title.
+#'
+#' @note Add \code{use_shiny_title} within the UI for \code{flashing_window_title} to work.
 #'
 #' @examples
 #' if (interactive()) {
@@ -108,7 +122,14 @@ flashing_window_title <- function(session = shiny::getDefaultReactiveDomain(),
 
 #' Create Busy Browser Title
 #'
+#' @description
+#' Change the text in the browser tab whenever the shiny application is processing any server-side code.
+#'
 #' @param title String to give the window title.
+#'
+#' @return The browser tab title will change whenever the shiny application is in a 'busy' state.
+#'
+#' @note Add \code{use_shiny_title} within the UI for \code{busy_window_title} to work.
 #'
 #' @examples
 #' if (interactive()) {

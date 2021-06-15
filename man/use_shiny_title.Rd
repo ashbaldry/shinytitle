@@ -6,8 +6,12 @@
 \usage{
 use_shiny_title()
 }
+\value{
+A script tag that enables \code{shinytitle} to work within a shiny app.
+}
 \description{
-Adding script to enable the ability to change the window title.
+Add this function to the UI of a shiny application in order for you to be able to update the
+browser title.
 }
 \examples{
 if (interactive()) {

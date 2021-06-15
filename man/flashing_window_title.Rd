@@ -34,8 +34,14 @@ is moved in the tab? Default is set to \code{TRUE}.}
 \item{duration}{Time (in milliseconds) to stop flashing the title. 0 (the default) means it will
 flash indefinitely.}
 }
+\value{
+The browser tab title will change between the original and newly specified title.
+}
 \description{
-Create Flashing Browser Title
+Alternate the text in the browser tab between the current text and the new specified text.
+}
+\note{
+Add \code{use_shiny_title} within the UI for \code{flashing_window_title} to work.
 }
 \examples{
 if (interactive()) {
